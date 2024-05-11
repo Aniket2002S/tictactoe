@@ -1,0 +1,54 @@
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .square {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .square:hover {
+    background-color: #ddd;
+  }
+  
+  .winner-text {
+    color: green;
+    margin-bottom: 20px;
+  }
+  
+  .player-text {
+    color: blue;
+    margin-bottom: 20px;
+  }
+  
+  .reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #45a049;
+  }
+  
